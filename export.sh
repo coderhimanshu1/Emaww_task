@@ -1,7 +1,6 @@
 #!/bin/bash
 
 VERBOSE=""
-XML_PATH=""
 
 while getopts "v" opt; do
   case ${opt} in
@@ -15,7 +14,6 @@ while getopts "v" opt; do
   esac
 done
 
-shift $((OPTIND -1))
-XML_PATH=$1
+XML_PATH=${@: -1}
 
 docker-compose up --build ${VERBOSE}

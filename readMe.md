@@ -8,7 +8,7 @@ Over the years, I have continuously expanded my knowledge and kept myself open t
 
 I was able to create a simple app which meets all the requirements mentioned in the task.
 
-*Notes:*
+_Notes:_
 
 Considering the time allocated for this task, I have done my best to create a Dockerfile, utilize Docker Compose, and develop a Python script for the data export process. I am pleased with the progress made.
 
@@ -27,38 +27,26 @@ Please feel free to provide any feedback or suggestions for improvement.
 
 1. Clone the repository to your local machine:
 
-   ```
-   git clone git@github.com:coderhimanshu1/Emaww_task.git
-   ```
+   `git clone git@github.com:coderhimanshu1/Emaww_task.git`
 
 2. Navigate to the project directory:
 
-```
-cd emaww_task
-```
+`cd emaww_task`
 
 3. Create a virtual environment (optional but recommended):
 
-```python3 -m venv myenv
-
-```
+`python3 -m venv myenv`
 
 4. Activate the virtual environment:
 
-```
-source myenv/bin/activate
-```
+`source myenv/bin/activate`
 
 5. Install the required Python packages:
 
-```pip install -r requirements.txt
-
-```
+`pip install -r requirements.txt`
 
 6. Run the application using the terminal:
 
-```./export.sh ./config.xml
-
-```
+`./export.sh ./config.xml`
 
 This command will build the Docker images, start the containers, and export data from config.xml to Redis.
